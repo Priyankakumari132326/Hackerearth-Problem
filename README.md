@@ -18,36 +18,3 @@ Print Yes if the input word can be considered as the string zoo otherwise, print
 
 
 
-//////python code /////
-
-string=input( )
-string2='zoo'
-
-s2=''
-s1=''
-for i in range(0,len(string)):
-  if string[i]=='z':
-    s1+='z'
-    i=i+1
-
-
-for j in range(0,len(string)):
-  if string[j] =='o':
-    s2+='o'
-    j+=1
-
-
-c2=len(s2)%len(s1)
-
-
-while len(string)<20:
-    if len(s2)==len(s1):
-        print("No")
-        break
-    if c2==0:
-
-        print("Yes") 
-        break  
-    else:
-        print("No") 
-        break
